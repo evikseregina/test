@@ -143,4 +143,7 @@ body {
   .main__div {
     max-width: 530px;
   }
+  .window__img {
+    height: 70dvh;
+  }
 }/*# sourceMappingURL=style.css.map */
