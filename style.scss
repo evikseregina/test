@@ -10,4 +10,99 @@ a {
 img {
     max-width: 100%;
   }
+  body{
+    position: relative;
+  }
+
+  .center {
+    padding-left: calc(50% - 1320px / 2);
+    padding-right: calc(50% - 1320px / 2);
+  }
   
+ 
+ .button{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(98, 151, 243);
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.4s;
+    border: 3px solid rgb(98, 151, 243);
+ }
+ .button:hover{
+   background-color: #fff;
+   color : #000;
+   border: 3px solid #000;
+
+ }
+ .window{
+    display: none;
+  
+   &__pop-up{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100dvw;
+    height: 100dvh;
+   }
+   &__img{
+    width: 100dvw;
+    height: 100dvh;
+   }
+
+ }
+ .visible {
+    display: block;
+   
+}
+.logo {
+    font-weight: bold;
+    font-size: large;
+ 
+ } 
+ .main{
+    
+
+    &__box{
+        display: grid;  
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+       
+    }
+    &__link{
+        grid-column: span 2;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        color: #000;
+    }
+    &__div{
+        max-width: 600px;
+    }
+
+    &__title{
+        color: rgb(98, 151, 243);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__caption{
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    &__span{
+        color: rgb(98, 151, 243);
+    }
+    &__text{
+        margin-bottom: 30px;
+        max-width: 540px;
+    }
+    &__img{
+        height: 450px;
+        width: 450px;
+        background-color: pink;
+    }
+ }
+
+
+
+ 

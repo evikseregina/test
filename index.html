@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
+    <section class="window">
+        <div class="window__pop-up">
+            <img class="window__img" src="./img/Снимок экрана 2023-10-30 в 19.35.33.png" alt="pop-up window">
+        </div>
+        </section>
+    <main class="main center">
+        <div class="main__box">
+        <a href="#" class="main__link"><logo class="logo"><img src="" alt="logo">Сократика</logo></a>
+            <div class="main__block">
+        <div class="main__div">
+        <h5 class="main__title">Добро Пожаловать</h5>
+        <h1 class="main__caption">Создавай презентации по школьной программе вместе с <span class="main__span">Сократика</span> </h1>
+        <p class="main__text">Используя искусственный интеллект, ты за считанные секунды получишь идеальную презентацию, которая подойдет для проведения уроков в школе на любую тему</p>
+        <a href="#" class="button">Начать</a>
+    </div>
+</div>
+    <div class="main__block">
+        <div class="main__img"></div>
+    </div>
+</div>
+    </main>
+    <script>
+        const buttonEl = document.querySelector('.button');
+        const blockPopup = document.querySelector('.window');
+
+        buttonEl.addEventListener('click', function (e) {
+            blockPopup.classList.toggle('visible');
+        });
+    </script>
 </body>
 </html>
