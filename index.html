@@ -31,8 +31,12 @@
     <script>
         const buttonEl = document.querySelector('.button');
         const blockPopup = document.querySelector('.window');
+        const windowImg = document.querySelector('.window__img')
 
         buttonEl.addEventListener('click', function (e) {
+            blockPopup.classList.toggle('visible');
+        });
+        windowImg.addEventListener('click', () => {
             blockPopup.classList.toggle('visible');
         });
     </script>
